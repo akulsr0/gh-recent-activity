@@ -130,7 +130,7 @@ const getUserActivity = async (username, _options = defaultOptions) => {
     const activity = events
       .map((e) => eventSerializer[e.type](e, options))
       .filter((act) => act !== null);
-    console.log(activity);
+    return activity;
   }
 };
 

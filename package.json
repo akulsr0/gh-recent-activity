@@ -1,5 +1,5 @@
 {
-  "name": "gh-activity",
+  "name": "gh-recent-activity",
   "version": "1.0.0",
   "type": "module",
   "description": "Get user's github activity",

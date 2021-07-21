@@ -2,6 +2,12 @@
 
 Get recent activity of a user on Github.
 
+## Working Demo
+
+Link: https://react-hkd9sw.stackblitz.io/
+
+![demo](https://user-images.githubusercontent.com/43666833/126552614-343e5481-aa75-4b7a-9c0f-bcb837370dcf.png)
+
 ## Installation
 
 ### Using NPM

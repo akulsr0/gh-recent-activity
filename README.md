@@ -4,12 +4,6 @@ Get recent activity of a user on Github.
 
 ## Installation
 
-### Using CDN
-
-```html
-<script src="https://unpkg.com/gh-recent-activity@latest/index.js" />
-```
-
 ### Using NPM
 
 ```bash

@@ -87,11 +87,14 @@ const eventSerializer = {
   CreateEvent: (event, options) => {
     const isBranch = event.payload.ref_type === "branch";
     const isRepo = event.payload.ref_type === "repository";
+    const isRelease = event.payload.ref_type === "tag";
     const emoji = "⚙️";
     const _text = (() => {
       if (isBranch)
         return `Created ${event.payload.ref} branch on ${event.repo.name}`;
       if (isRepo) return `Created ${event.repo.name} repository`;
+      if (isRelease)
+        return `Released ${event.payload.ref} at ${event.repo.name}`;
     })();
     const text = options.includeEmoji ? `${emoji} ${_text}` : _text;
     const user = getUserObj(event);

@@ -124,6 +124,7 @@ const defaultOptions = {
   includeEmoji: false,
   includeCommits: false,
 };
+
 const getUserActivity = async (username, _options = defaultOptions) => {
   const options = { ...defaultOptions, ..._options };
   const url = `https://api.github.com/users/${username}/events/public`;

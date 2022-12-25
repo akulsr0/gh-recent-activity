@@ -36,8 +36,8 @@ declare module "gh-recent-activity" {
     };
   };
 
-  declare function getUserActivity(
+  function getUserActivity(
     username: string,
     options: ActivityOptions
-  ): Promise<Activity>;
+  ): Promise<Activity[]>;
 }
